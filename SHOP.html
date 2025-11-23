@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thlorian website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap; /* Allow items to wrap if needed */
+            margin-left: 20px; /* Add margin to push the content to the right */
+        }
+
+        .logo {
+            width: 100px; /* Set the width of the logo */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 20px; /* Add some spacing between logo and title */
+        }
+
+        .title {
+            font-size: 60px;
+            color: #000000; /* Set font color to black */
+            text-align: center; /* Center the title */
+            flex: 1; /* Take up remaining space */
+            margin-top: 20px;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .image-row figure {
+            width: 30%;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .image-row img {
+            width: 100%;
+            display: block;
+        }
+
+        .image-row figcaption {
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        .product-name {
+            color: #000000; /* Set product name color */
+        }
+
+        .product-price {
+            color: #ff0000; /* Set product price color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Company Logo" class="logo">
+        <h1 class="title">Products</h1>
+    </div>
+
+    <div class="image-row">
+        <figure>
+            <img src="cake.png" alt="Cake" width="200" height="200">
+            <figcaption><span class="product-name">Cake</span><br><span class="product-price">$ 29.90</span></figcaption>
+        </figure>
+        <figure>
+            <img src="yumaobi.jpg" alt="Quill Pen" width="200" height="200">
+            <figcaption><span class="product-name">Quill pen</span><br><span class="product-price">RM 7.65</span></figcaption>
+        </figure>
+        <figure>
+            <img src="xiongzhen.jpg" alt="Paper Plate" width="200" height="200">
+            <figcaption><span class="product-name">Paper Plate</span><br><span class="product-price">RM 5.74</span></figcaption>
+        </figure>
+    </div>
+
+    <div class="image-row">
+        <figure>
+            <a href="hanghaitu.html">
+                <img src="hanghaitu.jpg" alt="Click to go to another page" width="200" height="200"></a>
+            <figcaption><span class="product-name">Nautical chartk</span><br><span class="product-price">RM 5.70</span></figcaption>
+        </figure>
+        <figure>
+            <img src="wangyuanjing.jpg" alt="Box" width="200" height="200">
+            <figcaption><span class="product-name">telescope</span><br><span class="product-price">RM 30.74</span></figcaption>
+        </figure>
+        <figure>
+            <img src="cap.jpg" alt="Paper Box" width="200" height="200">
+            <figcaption><span class="product-name">Cap</span><br><span class="product-price">RM 40.74</span></figcaption>
+        </figure>
+    </div>
+</body>
+</html>
